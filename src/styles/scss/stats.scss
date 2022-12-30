@@ -1,0 +1,107 @@
+.stats{
+    min-height: 100vh;
+    padding-top: 5rem;
+    a{
+        .homeIcon{
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            top: 2%;
+            left: 3%;
+            fill: #fff;
+            cursor: pointer;
+        }
+    }
+    .statsWrapper{
+        .statsContainer{
+            margin: 0 5%;
+            .statsFlex{
+                position: relative;
+                .sprofile{
+                    height: 50vh;
+                    position: relative;
+                    .sImage{
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 20%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border: 5px solid #4ea9ff;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .snameTexts{
+                        position: absolute;
+                        top: 70%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        .suserTitle{
+                            text-align: center;
+                            color: var(--text-primary);
+                            font-size: 2rem;
+                            font-weight: 300;
+                        }
+                        .suserName{
+                            text-align: center;
+                            color: #4ea9ff;
+                            text-decoration: none !important;
+                            cursor: pointer;
+                            font-size: 1.1rem;
+                            font-weight: 200;
+                        }
+                        .suserName:hover{
+                            text-decoration: underline;
+                        }
+                        .suinfo{
+                            display: flex;
+                            .infotxts{
+                                color: var(--text-primary);
+                                font-size: 1.3rem;
+                                font-weight: 300;
+                                margin: 10px 20px;
+                            }
+                        }
+                        .saccInfo{
+                            display: flex;
+                            .sintx{
+                                margin: 10px 20px;
+                                padding: 10px 30px;
+                                border-radius: 5px;
+                                background-color: rgba(36, 36, 36, 0.61);
+                                h2{
+                                    color: var(--text-primary);
+                                    font-size: 2rem;
+                                    text-align: center;
+                                    margin-bottom: -5px;
+                                    font-weight: 300;
+                                }
+                                span{
+                                    color: var(--text-primary);
+                                    font-size: 0.8rem;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    font-weight: 200;
+                                }
+                            }
+                        }
+                    }
+                }
+                .dennisGraph{
+                    width: min-content;
+                    margin: 0 auto !important;
+                }
+                .sactivity{
+                    display: flex;
+                    width: min-content;
+                    margin: 0 auto !important;
+                }
+            }
+        }
+    }
+}

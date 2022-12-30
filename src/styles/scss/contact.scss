@@ -1,0 +1,60 @@
+.contact{
+    height: min-content;
+    position: relative;
+    .conwrapper{
+        .concontainer{
+            margin: 0 5%;
+            .conflex{
+                width: 100%;
+                position: relative;
+                .conTitle{
+                    position: relative;
+                    text-align: center;
+                    color: var(--text-primary);
+                    letter-spacing: 1.5px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    .conCounter{
+                        position: absolute;
+                        bottom: 0;
+                        padding-bottom: 2px;
+                        margin-right: 20px;
+                        color: aqua;
+                        font-size: 12px;
+                    }
+                }
+                .constitle{
+                    text-align: center;
+                    color: var(--text-primary);
+                    font-size: 5rem;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    @media(max-width: 480px){
+                        font-size: 3rem;
+                    }
+                }
+                .contexts{
+                    text-align: center;
+                    color: var(--text-primary);
+                    font-weight: 100;
+                    font-size: 1.3rem;
+                }
+                .contbtnP{
+                    margin-top: 20px;
+                    width: 100%;
+                    text-align: center;
+                    height: min-content;
+                    .contactb{
+                        color: var(--text-primary);
+                        padding: 10px 30px;
+                        border-radius: 5px;
+                        border: 1px solid aqua;
+                        transition: .2s;
+                        line-height: 1;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

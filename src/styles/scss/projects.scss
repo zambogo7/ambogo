@@ -1,0 +1,167 @@
+.projects{
+    height: min-content;
+    .pwrapper{
+        .pcontainer{
+            margin: 0 5%;
+            padding: 5% 0;
+            .pTitle{
+                position: relative;
+                text-align: center;
+                color: var(--text-primary);
+                letter-spacing: 1.5px;
+                font-weight: 400;
+                .pCounter{
+                    position: absolute;
+                    bottom: 0;
+                    padding-bottom: 2px;
+                    margin-right: 20px;
+                    color: aqua;
+                    font-size: 17px;
+                }
+            }
+            .proj{
+                padding: 5% 0;
+                .pflex{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+                    .projImage{
+                        width: 50%;
+                        a{
+                            img{
+                                width: 100%;
+                                height: auto;
+                                filter: brightness(85%);
+                                transition: 0.3s;
+                                cursor: pointer;
+                            }
+                            img:hover{
+                                filter: brightness(100%);
+                            }
+                        }
+                    }
+                    .projTexts{
+                        width: 40%;
+                        .projTitle{
+                            color: var(--text-primary);
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            color: var(--text-primary);
+                            letter-spacing: 1.2px;
+                            font-weight: 100;
+                            background-color: var(--back-related);
+                            padding: 15px 15px;
+                            padding-right: 50px;
+                            border-radius: 5px;
+                        }
+                        .pstack{
+                            margin-top: 20px;
+                            span{
+                                margin-right: 20px;
+                                color: var(--text-primary);
+                                font-size: 13px;
+                                font-weight: 100;
+                            }
+                        }
+                        .getCode{
+                            margin-top: 10px;
+                            span{
+                                margin-right: 20px;
+                                color: var(--text-primary);
+                                font-size: 1.5rem;
+                                font-weight: 100;
+                            }
+                        }
+                    }
+                }
+                .pfreverse{
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+            }
+            .otherProjects{
+                .oTitle{
+                    color: var(--text-primary);
+                    text-align: center;
+                    letter-spacing: 1.5px;
+                    font-weight: 500;
+                }
+                .oproj{
+                    margin-left: 10%;
+                    padding: 4% 0;
+                    a{
+                        .otproj{
+                            width: fit-content;
+                            color: var(--text-primary);
+                            font-weight: 400;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+                        .otproj::after{
+                            -webkit-transition: all .2s ease-in-out;
+                            transition: all .2s ease-in-out;
+                            position: relative;
+                            bottom: 2px;
+                            margin-left: 15px;
+                            content: '';
+                            background: url(../../images/arrow.png) no-repeat center;
+                            background-size: 100%;
+                            width: 15px;
+                            height: 15px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            transition: 0.3s;
+                        }
+                        .otproj:hover{
+                            color: aqua;
+                        }
+                        .otproj:hover::after{
+                            margin-left: 25px;
+                        }
+                    }
+                    .optexts{
+                        color: var(--text-primary);
+                        font-weight: 100;
+                    }
+                    .ostack{
+                        margin-top: 20px;
+                        span{
+                            color: aqua;
+                            margin-right: 20px;
+                            padding: 3px 7px;
+                            border: 1px solid aqua;
+                            border-radius: 3px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .pflex{
+        flex-direction: column;
+        .projImage{
+            width: 100% !important;
+        }
+        .projTexts{
+            width: 100% !important;
+        }
+    }
+    .pfreverse{
+        flex-direction: column !important;
+    }
+    .otherProjects{
+        .oproj{
+            margin-left: 0px !important;
+            .ostack{
+                span{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

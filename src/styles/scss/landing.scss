@@ -1,0 +1,222 @@
+.landing{
+    height: min-content;
+    position: relative;
+    .lcontainer{
+        margin: 0 5%;
+        .lwrapper{
+            padding-top: 50px;
+            .lflex{
+                display: flex;
+                .ltexts{
+                    width: 45%;
+                    margin-left: 5%;
+                    margin-top: 5%;
+                    .lcachy{
+                        font-size: 1.75rem;
+                        color: var(--text-primary);
+                        img{
+                            margin: 0 15px;
+                            width: 1.8rem;
+                            height: 1.8rem;
+                            cursor: pointer;
+                        }
+                        .wave {
+                            animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+                            animation-duration: 2.5s;        /* Change to speed up or slow down */
+                            animation-iteration-count: infinite;  /* Never stop waving :) */
+                            transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+                            display: inline-block;
+                        }
+                        
+                        @keyframes wave-animation {
+                            0% { transform: rotate( 0.0deg) }
+                            10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+                            20% { transform: rotate(-8.0deg) }
+                            30% { transform: rotate(14.0deg) }
+                            40% { transform: rotate(-4.0deg) }
+                            50% { transform: rotate(10.0deg) }
+                            60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+                            100% { transform: rotate( 0.0deg) }
+                        }
+                    }
+                    .myname{
+                        color: var(--text-primary);
+                        margin-top: 20px;
+                        font-size: 50px;
+                    }
+                    .lintrotxts{
+                        color: var(--text-primary);
+                        margin-top: 10px;
+                        font-size: 1.8rem;
+                        margin-bottom: 50px;
+                        font-weight: lighter;
+                    }
+                    .lintrotxts::selection {
+                        background: #221427;
+                    }
+                    .pouterLinks{
+                        margin-top: 40px;
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        .git{
+                            margin-right: 15px;
+                            @media(max-width: 480px){
+                                width: 100% !important;
+                            }
+                            a{
+                                border: 0;
+                                background-color: rgb(0, 0, 0);
+                                padding: 15px 40px;
+                                border-radius: 5px;
+                                position: relative;
+                                color: #fff !important;
+                                text-decoration: none;
+                                .pIcons{
+                                    font-size: 20px;
+                                    margin-bottom: -5px !important;
+                                }
+                            }
+                        }
+                        .dresume{
+                            .dresumeLink{
+                                border: 0;
+                                background-color: rgb(0, 0, 0);
+                                padding: 15px 40px;
+                                border-radius: 5px;
+                                position: relative;
+                                color: #fff !important;
+                                text-decoration: none;
+                                .pIcons{
+                                    font-size: 20px;
+                                    margin-bottom: -5px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                .limages{
+                    width: 50%;
+                    .limageWrapper{
+                        width: 60%;
+                        margin-top: -80px;
+                        padding-left: 70px;
+                        .denoo{
+                            width: 100%;
+                            height: auto;
+                            transition: .5s;
+                            -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+                            mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .callToActionScroll{
+        -webkit-animation: calltoaction 1s ease-out 0s infinite alternate none running;
+        animation: calltoaction 1s ease-out 0s infinite alternate none running;
+        fill: red;
+        font-size: 10px!important;
+        margin: 0 5%;
+        margin-bottom: 10px;
+        position: absolute;
+        bottom: 0;
+        text-align: center!important;
+        width: 90%;
+        z-index: 10;
+        .MuiSvgIcon-root{
+            path{
+                width: 20px !important;
+            }
+        }
+    }
+    @keyframes calltoaction {
+        0% {
+            fill: red;
+            margin-bottom: 20px;
+        }
+
+        to {
+            fill: #ff0;
+            margin-bottom: 5px;
+        }
+    }
+    .hidecallToActionScroll{
+        display: none !important;
+    }
+}
+
+// media queries
+@media(max-width: 1000px){
+    .limages{
+        width: 50%;
+        .limageWrapper{
+            width: 70% !important;
+            margin-top: 30px !important;
+            padding-left: 70px;
+        }
+    }
+}
+@media(max-width: 768px){
+    .ltexts{
+        width: 100% !important;
+        .lcachy{
+            margin-top: 10px !important;
+            font-size: 1.5rem;
+        }
+        .myname{
+            margin-top: 20px !important;
+            font-size: 50px;
+        }
+        .lintrotxts{
+            font-size: 1.75rem !important;
+            margin-bottom: 100px;
+            font-weight: lighter;
+        }
+    }
+    .limages{
+        display: none !important;
+    }
+}
+@media(max-width: 600px){
+    .ltexts{
+        width: 100% !important;
+        .lcachy{
+            margin-top: 50px;
+            font-size: 1.5rem;
+        }
+        .myname{
+            margin-top: 40px !important;
+            font-size: 50px;
+        }
+        .lintrotxts{
+            font-size: 1.75rem !important;
+            margin-bottom: 100px;
+        }
+    }
+    .limages{
+        display: none !important;
+    }
+}
+@media(max-width: 420px){
+    .lintrotxts{
+        margin-bottom: 60px !important;
+    }
+    .pouterLinks{
+        display: flex;
+        flex-direction: column !important;
+        .git{
+            margin-right: 0px !important;
+            a{
+                padding: 15px 35% !important;
+            }
+        }
+        .dresume{
+            margin-top: 50px;
+            a{
+                padding: 15px 33.5% !important;
+            }
+        }
+    }
+}
