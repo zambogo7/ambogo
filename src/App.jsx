@@ -4,7 +4,6 @@ import Home from './routes/Home'
 import Stats from './routes/Stats'
 import Contact from './routes/Contact'
 import NotFound from './routes/NotFound'
-import Preloader from './components/Preloader'
 import useLocalStorage from 'use-local-storage'
 import CookieConsent from "react-cookie-consent"
 import { ReactComponent as Sun } from './images/sun.svg'
@@ -55,7 +54,7 @@ function App() {
                 disableStyles={true}
                 location="bottom"
                 buttonText="Okay"
-                cookieName="denniskibet"
+                cookieName="ZedekiahAmbogo"
                 buttonClasses="button"
                 containerClasses="cookieConsent"
                 expires={150}

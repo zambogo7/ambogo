@@ -45,11 +45,6 @@ const Stats = () => {
                 <div className="snameTexts">
                   <h2 className="suserTitle" style={{ paddingTop: '200px' }}>{userdata.name}</h2>
                   <h3 className="suserName">@{userdata.login}</h3>
-                  <div className="suinfo">
-                    <h2 className="infotxts">{userdata.company}</h2>
-                    <h2 className="infotxts">{userdata.location}</h2>
-                    <h2 className="infotxts">Joined on {dateFormat(userdata.created_at, "mmmm dS, yyyy")}</h2>
-                  </div>
                   <div className="saccInfo">
                     <div className="sintx">
                       <h2>{userdata.public_repos}</h2>
@@ -67,10 +62,13 @@ const Stats = () => {
                 </div>
               </div>
              
-              <div className="sactivity" style={{margin:"0 auto", paddingTop: '200px'}}>
-                <img height="137px" alt="" src="https://github-readme-stats.vercel.app/api?username=zambogo7&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&line_height=21&theme=dark" />&nbsp;
-                <img height="137px" alt="" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zambogo7&hide=html&hide_title=true&hide_border=true&layout=compact&langs_count=6&exclude_repo=comp426,Redventures-Movie-Quotes&theme=dark" />
-               
+              <div className="sactivity" style={{margin:"0 auto", paddingTop: '10%', paddingBottom: '2%'}}>
+                <img height="17%" alt="" src="https://github-readme-stats.vercel.app/api?username=zambogo7&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&line_height=21&theme=dark" />&nbsp;
+                
+              </div>
+              <div className="sactivity" style={{margin:"0 auto", paddingTop: '2%', paddingBottom: '2%'}}>
+                
+                <img height="17%" alt="" src="https://github-readme-stats.vercel.app/api/top-langs/?username=zambogo7&hide=html&hide_title=true&hide_border=true&layout=compact&langs_count=6&exclude_repo=comp426,Redventures-Movie-Quotes&theme=dark" />
               </div>
               <div style={{display:'flex'}} >
               <img style={{width:'33%', padding:'1%'}} src={ProblemSolvingCert} alt="Problem Solving Cert" />

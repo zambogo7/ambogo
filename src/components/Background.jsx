@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/css/background.css'
-import Dennis from '../images/zeddy-image.png'
+import Zeddy from '../images/zeddy-image.png'
 
 const background = () => {
   return (
@@ -11,7 +11,7 @@ const background = () => {
                     <div className="dennisImage">
                         <div className="img-blk-wrapper">
                             <div className="img-blk">
-                                <img src={Dennis} alt="" />     
+                                <img src={Zeddy} alt="" />     
                             </div>
                         </div>
                     </div>
