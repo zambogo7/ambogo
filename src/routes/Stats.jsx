@@ -62,7 +62,7 @@ const Stats = () => {
                 </div>
               </div>
              
-              <div className="sactivity" style={{margin:"0 auto", paddingTop: '10%', paddingBottom: '2%'}}>
+              <div className="sactivity" style={{margin:"0 auto", paddingTop: '100px', paddingBottom: '2%'}}>
                 <img height="17%" alt="" src="https://github-readme-stats.vercel.app/api?username=zambogo7&hide_title=true&hide_border=true&show_icons=true&include_all_commits=true&count_private=true&line_height=21&theme=dark" />&nbsp;
                 
               </div>
