@@ -82,7 +82,7 @@ const Projects = () => {
                                     <span>figma</span>
                                 </div>
                                 <div className="getCode">
-                                    <span><a href="https://github.com/tenafric/tenafrik"><FiGithub title="Github"/></a></span>
+                                    <span><a href="https://metabnb-umber.vercel.app/"><FiGithub title="Github"/></a></span>
                                     <span><a href="https://metabnb-umber.vercel.app/"><FiExternalLink title="View live site"/></a></span>
                                 </div>
                             </div>
